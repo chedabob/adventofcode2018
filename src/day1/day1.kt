@@ -1,5 +1,6 @@
 package day1
 
+import utils.loadResource
 import java.io.File
 
 fun main(args : Array<String>) {
@@ -32,7 +33,7 @@ fun test1() {
 }
 
 fun input1 () {
-    val input = File("./res/day1/day1input1.txt").readLines().joinToString(",")
+    val input = loadResource("day1","day1input1.txt").joinToString(",")
     val result = run(input)
     println(result)
 }
